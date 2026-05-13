@@ -1,0 +1,25 @@
+dbt_script_runner_test:
+  outputs:
+    dev:
+      dataset: sbx_washingtona
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: ./dev-demsstaff-google-creds.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: dev-demsstaff
+      threads: 4
+      type: bigquery
+  target: dev
+my-bigquery-db:
+  outputs:
+    dev:
+      OPTIONAL_CONFIG: VALUE
+      dataset: DBT_DATASET_NAME
+      keyfile: ./dev-demsstaff-google-creds.json
+      method: service-account
+      project: dev-demsstaff
+      threads: 4
+      type: bigquery
+  target: dev
