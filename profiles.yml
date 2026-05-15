@@ -15,11 +15,10 @@ dbt_script_runner_test:
 my-bigquery-db:
   outputs:
     dev:
-      OPTIONAL_CONFIG: VALUE
       dataset: DBT_DATASET_NAME
-      keyfile: ./dev-demsstaff-google-creds.json
-      method: service-account
+      method: oauth
       project: dev-demsstaff
+      dataset: sbx_washingtona
       threads: 4
       type: bigquery
   target: dev
