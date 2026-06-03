@@ -1,2 +1,2 @@
 
-Select project_id, total_jobs_count, active_jobs_count, scheduled_jobs_count,  run_this_yr_job_count, number_of_service_accounts, shared_jobs_count, total_managers, active_managers, total_user_count from `dbt_test
+Select project_id, total_jobs_count, active_jobs_count, scheduled_jobs_count,  run_this_yr_job_count, number_of_service_accounts, shared_jobs_count, total_managers, active_managers, total_user_count from `dbt_test`
