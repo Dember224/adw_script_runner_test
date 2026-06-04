@@ -1,10 +1,9 @@
 dbt_script_runner_test:
   outputs:
     dev:
-      dataset: DBT_DATASET_NAME
       method: oauth
       project: dev-demsstaff
-      dataset: sbx_washingtona
+      dataset: commons
       threads: 4
       type: bigquery
   target: dev
@@ -12,10 +11,9 @@ dbt_script_runner_test:
 my-bigquery-db:
   outputs:
     dev:
-      dataset: DBT_DATASET_NAME
       method: oauth
       project: dev-demsstaff
-      dataset: sbx_washingtona
+      dataset: commons
       threads: 4
       type: bigquery
   target: dev
